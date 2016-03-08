@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+
+
+		<title>Comme à la maison</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>	
+	<body>
+		<nav class="navbar navbar-inverse">
+			<div class="container-fluid">
+				<div class="navbar-header" >
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false" >
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" id="home" href="index.html" >
+						<img id="logo" src="Logo.png">
+					</a>
+				</div>
+				<div class="header"></div>
+				<form class="navbar-form navbar-right" >
+				<input type="text" class="btn-group" role="group" placeholder="Adresse Mail">
+				<input type="text" class="btn-group" role="group" placeholder="Mot de passe">
+				<button type="button" class="btn btn-default navbar-btn">Connexion</button>
+				<button type="button" class="btn btn-default navbar-btn">Inscription</button>
+			</div>
+				</nav>
+				<h1>Comme à la Maison !
+				<div class="float2">
+				<img  id="voisin" src="entraidevoisins.jpg">
+			</div>
+			</h1>
+				<h2>Une plateforme de mise en relation entre voisins simple et efficace dans le domaine du bricolage.</h2>
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-xs-12" id="bordure">
+						<label>
+							<input type="radio" name="grad" value="Offres" CHECKED/>Offres
+						</label>
+						<label>
+							<input type="radio" name="grad" value="Demandes" />Demandes
+						</label>
+							<select name="Activité" class="styled-select">
+								<option value="value0" selected disabled>Activité</option> 
+								<option value="value1">Plomberie</option> 
+								<option value="value2">Électricité</option>
+								<option value="value3">Jardinage</option>
+								<option value="value4">Peinture</option>
+								<option value="value5">Prêt de matériel</option>
+							</select>
+						<input type="text" class="btn-group" role="group" placeholder="Ville">
+						<select name="Rayon" class="styled-select">
+								<option value="value0" selected disabled>Rayon</option> 
+								<option value="value1">1Km</option> 
+								<option value="value2">5Km</option>
+								<option value="value3">10Km</option>
+								<option value="value4">30Km</option>
+							</select>
+						<form action="/search" id="searchthis" method="get">
+						<input id="search-btn" type="submit" value="Rechercher" />
+						</form>
+					</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container-fluid">
+				<div class="center">
+				<h3>Comme à la Maison permet de vous mettre en relation avec vos voisins dans plusieurs domaines du bricolage comme :</h3>
+				<div class="float" id="truc">
+					<img  src="plomberie.jpg">
+					<figcaption>La Plomberie</figcaption>
+					</div>
+					<div class="float">
+					<img  src="peinture.jpg">
+					<figcaption>La Peinture</figcaption>
+					</div>
+					<div class="float">
+					<img  src="outils.jpg">
+					<figcaption>Le Prêt d'outils</figcaption>
+					</div>
+					<div class="float">
+					<img  src="jardinage.jpg">
+					<figcaption>Le Jardinage</figcaption>
+					</div>
+					<div class="float">
+					<img  src="electrique.jpg">
+					<figcaption>L'Électricité</figcaption>
+					</div>
+				</div>
+				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	</body>
+</html>

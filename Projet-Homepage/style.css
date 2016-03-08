@@ -1,0 +1,110 @@
+.navbar{
+	margin-bottom: 0;
+	position: relative;
+	padding-bottom: 10px;
+	margin-top: 0;
+	height: 100px;
+	background-color: black;
+}
+.btn btn-default navbar-btn{
+	margin-bottom: 0;
+}
+.btn-group{
+	text-align: center;
+	height: 34px;
+}
+.styled-select {
+   width: 150px;
+   height: 34px;
+   overflow: hidden;
+   border: 1px solid #ccc;
+   }
+#bordure {
+  background-color: powderblue;  
+  margin-top: 5px;
+  border-width: 0.1px;   
+  border-color: chartreuse;  
+  padding: 5px 5px 5px 5px;   
+}
+img{
+	height: 300px;
+	width: 250px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#search-btn {
+  background-color: orange;  
+  border-style: solid;  
+  border-width: 1px;  
+  border-color: orange;  
+  padding: 5px 5px 5px 5px;   
+  width: 40%;   
+  box-sizing: border-box;   
+  font-family: PT sans;   
+  font-size: 13px;  
+  font-weight: normal;   
+  letter-spacing: 2px;   
+  margin: 10px 7px 10px 7px;   
+  text-transform: uppercase;   
+  color: #ffffff;   
+}
+
+#logo{
+	width: 5em;
+	height: 5em;
+	margin-bottom: 0;
+	padding-bottom: 20px;
+}
+body {
+	background-color: ;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	margin : 0;
+}
+figcaption{
+	margin-top: 0;
+	font-size: 1.5em;
+	font-family: cursive;
+	color: green;
+}
+h2{
+	font-size: 2.25em;
+	font-family: cursive;
+	color: green;
+}
+h1{
+	color : green;
+	font-size: 6em;
+	text-align: center;
+	font-family: times, serif;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+h3{
+	font-family: cursive;
+	margin-bottom: 25px;
+	color: green;
+}
+h6{
+	font-family: cursive;
+	margin-right: 10px;
+}
+.header{
+	margin-top: auto;
+	padding-top: 10px;
+}
+.float{
+	float: left;
+	text-align: center;
+}
+.float2{
+	float:right;
+}
+#voisin{
+	height: 150px;
+	width: 150px;
+	margin-left: 0;
+}
+	
