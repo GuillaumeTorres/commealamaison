@@ -51,13 +51,13 @@ img{
   border-color: orange; 
   border-style: solid;  
   border-width: 1px;   
-  color: #ffffff;
-  padding: 5px 5px 5px 5px;   
+  color: #ffffff;   
   font-family: PT sans;   
   font-size: 13px;  
-  font-weight: normal;   
+  font-weight: normal;
   letter-spacing: 2px;   
-  margin: 10px 2px 2px 2px;    
+  margin: 10px 2px 2px 2px;
+  padding: 5px 5px 5px 5px;
   text-transform: uppercase;   
   width: 200px;  
 }
@@ -110,9 +110,10 @@ h4{
 	margin-top: auto;
 }
 h6{
+	float: right;
 	font-family: cursive;
 	margin-right: 10px;
-	float: right;
+	
 }
 .header{
 	float: right;
@@ -122,6 +123,8 @@ h6{
 .float{
 	float: left;
 	text-align: center;
+	vertical-align: middle;
+
 }
 .float2{
 	float:right;
