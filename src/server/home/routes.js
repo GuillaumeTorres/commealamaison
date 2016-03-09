@@ -6,24 +6,19 @@ var router = express.Router();
 router.get('/', function(req, res) {
 	res.send([
 		{
-			firstName: 'guigui',
-			lastName: 'toto',
-			email: 'guigui.toto@gmail.com'
+			firstName: 'user1',
+			lastName: 'user1',
+			email: 'user1@gmail.com'
 		},
 		{
-			firstName: 'guigui',
-			lastName: 'toto',
-			email: 'guigui.toto@gmail.com'
+			firstName: 'user2',
+			lastName: 'user2',
+			email: 'user2@gmail.com'
 		},
 		{
-			firstName: 'guigui',
-			lastName: 'toto',
-			email: 'guigui.toto@gmail.com'
-		},
-		{
-			firstName: 'guigui',
-			lastName: 'toto',
-			email: 'guigui.toto@gmail.com'
+			firstName: 'user3',
+			lastName: 'user3',
+			email: 'user3@gmail.com'
 		}
 	]);
 });
