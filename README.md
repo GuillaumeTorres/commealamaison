@@ -18,5 +18,5 @@ $ npm run client
 #### Documentation
 
 
-[Doc AngularJs/n](https://docs.angularjs.org/api)
-[Vidéos AngularJs](https://www.youtube.com/playlist?list=PLjwdMgw5TTLUDlJyx4yIPQjoI-w-7Zs1r)
+- [Doc AngularJs](https://docs.angularjs.org/api)
+- [Vidéos AngularJs](https://www.youtube.com/playlist?list=PLjwdMgw5TTLUDlJyx4yIPQjoI-w-7Zs1r)
