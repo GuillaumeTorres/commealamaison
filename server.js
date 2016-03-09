@@ -1,10 +1,15 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser');
 var path = require('path');
+var routes = require('./src/server/routes');
 
 var PORT = process.env.PORT || 3000;
 
-app.all('/*', function(req, res) {
+app.use(bodyParser.json());
+routes(app);
+
+app.all('/*', (req, res) => {
 	res.sendFile(path.join(__dirname, 'public/index.html'));
 });
 

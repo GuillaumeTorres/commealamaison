@@ -1,5 +1,6 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
+import homeController from 'views/home/home';
 
 const app = angular.module('app', [uiRouter]);
 
@@ -9,11 +10,12 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 	$stateProvider
 		.state('home', {
 			url: '/',
-			template: require('views/home.html')
+			template: require('views/home/home.html'),
+			controller: homeController
 		})
-		.state('about', {
-			url: '/about',
-			template: require('views/about.html')
+		.state('register', {
+			url: '/register',
+			template: require('views/register/register.html')
 		})
 	$locationProvider.html5Mode(true);
 });
