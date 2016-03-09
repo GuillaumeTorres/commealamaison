@@ -112,6 +112,7 @@ h4{
 h6{
 	font-family: cursive;
 	margin-right: 10px;
+	float: right;
 }
 .header{
 	float: right;
@@ -137,4 +138,4 @@ h6{
 #radio {
 	margin-left: 5px;
 	margin-right: 5px;
-}
+}	
