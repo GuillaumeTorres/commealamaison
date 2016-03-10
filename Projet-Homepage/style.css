@@ -115,6 +115,11 @@ h6{
 	margin-right: 10px;
 	
 }
+h5{
+	font-size: 1.5em;
+	color: #169;
+	
+}
 .header{
 	float: right;
 	margin-bottom: 10px;
@@ -142,3 +147,13 @@ h6{
 	margin-left: 5px;
 	margin-right: 5px;
 }	
+#footer{
+    background-color: black;
+	color: black;
+}
+.line{
+	color: #169;
+}
+.copyright-text{
+	color: #169;
+}
