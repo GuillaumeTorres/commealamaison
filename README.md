@@ -24,6 +24,8 @@ $ npm run client
 
 - [Vidéo Html/CSS - Sass](https://www.youtube.com/watch?v=_SEwzS1vG28)
 
+- [Vidéos git](https://www.youtube.com/playlist?list=PLjwdMgw5TTLXuY5i7RW0QqGdW0NZntqiP)
+
 #### Structure
 
 Le développement se fera exclusiement dans le dossier _./src_.
@@ -31,6 +33,23 @@ Le fichier _./config.js_ contient les routes de l'application, il sera modifié 
 Tout le style se trouve dans _assets/css_. Un fichier.scss par page à importer dans le _main.scss_.
 
 Les modules js sont avec le html dans le dossier _views_
+
+### Git
+
+Lors du développement d'une nouvelle fonctionnalité, mettre son projet à jour puis créer sa branche
+```
+$ git pull
+$ git checkout -b my_branch
+```
+Une fois le développement terminé
+```
+$ git status
+$ git add chemin/vers/fichier.xxx
+$ git commit -m "Ce que j'ai fais"
+$ git push origin my_branch
+```
+Vous verrez vorte branche apparaître sur github et pourrez créer une pull request pour la merge avec develop.
+Pour plus de détail : [Les branches](https://www.youtube.com/watch?v=THsj6g_kG10)
 
 ## Description
 

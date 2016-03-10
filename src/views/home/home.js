@@ -11,5 +11,12 @@ export default function($scope, $http){
 				console.log($scope.users);
 			});
 		}
+		$http.post('/user', {
+			firstName: 'Jean',
+			lastName: 'Dupond',
+			email: 'jean.dupond@gmail.com'
+		}).success(response => {
+			console.log(response);
+		});
 	}
 }
