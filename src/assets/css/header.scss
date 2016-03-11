@@ -13,7 +13,7 @@
 	.menu{
 		height: 40px;
 		line-height: 40px;
-		color: white;
+		
 		background-color: rgba(0,0,0,0.7);
 		position: absolute;
 		top: 100px;
@@ -33,8 +33,11 @@
 		}
 	}
 
-	a{
-		color: #fff;
+
+	h6{
+		float: right;
+		color: dodgerblue;
+		font-size: 1em;
 	}
 	.navbar-form{
 		margin-right: 20px;
