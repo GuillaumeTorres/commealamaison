@@ -5,6 +5,13 @@
 		font-size: 4em;
 		color: green;
 	}
+	h1{
+		font-family: cursive;
+		text-align: center;
+		font-size: 4em;
+		color: green;
+	}
+		
 	.styled-select{
 	   border: 1px solid #ccc;
 	   height: 34px;
@@ -36,7 +43,8 @@
 	}
 	td{
     border: 1px solid black; 
-		text-align: center;
+	font-size: 1.5em;
+	padding-left: 15px;
 	}
 	#plomberie{
 		height: 200px;
@@ -67,5 +75,14 @@
 		width: 200px;
 		background: url('../img/electrique.jpg')no-repeat;
 		background-size:cover;
+	}
+	.col-md-6 .col-md-offset-3{
+		float: right;
+	}
+	#machin{
+		font-size: 2em;
+	}
+	button{
+		margin-left: 10px;
 	}
 }
