@@ -1,16 +1,21 @@
 
-	#footer{
-		background-color: black;
-		color: black;
-	}
-	.line{
-		color: #169;
-	}
-	.copyright-text{
-		color: #169;
-	}
-	h5{
-			font-size: 1.5em;
-			color: #169;
+#footer{
+	background-color: black;
+	color: black;
+	position: relative;
+	clear:both;
+	margin-top: 0px;
+	height: 200px;
 
-	}
+}
+.line{
+	color: #169;
+}
+.copyright-text{
+	color: #169;
+}
+h5{
+	font-size: 1.5em;
+	color: #169;
+
+}
