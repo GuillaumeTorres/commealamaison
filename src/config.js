@@ -24,6 +24,11 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 			template: require('views/register/register.html'),
 			controller: registerController
 		})
+		.state('mdp', {
+			url: '/register/mdp',
+			template: require('views/register/mdp.html'),
+			controller: registerController
+		})
 		.state('maps', {
 			url: '/maps',
 			template: require('views/maps/maps.html'),
