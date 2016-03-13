@@ -24,9 +24,9 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 			template: require('views/register/register.html'),
 			controller: registerController
 		})
-		.state('mdp', {
-			url: '/register/mdp',
-			template: require('views/register/mdp.html'),
+		.state('resetpass', {
+			url: '/reset-password',
+			template: require('views/register/resetpass.html'),
 			controller: registerController
 		})
 		.state('maps', {
@@ -53,7 +53,8 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 			url: '/notice/edit',
 			template: require('views/notice/edit.html'),
 			controller: noticeController
-		}).state('showNotice', {
+		})
+		.state('showNotice', {
 			url: '/notice/show',
 			template: require('views/notice/show.html'),
 			controller: showController
