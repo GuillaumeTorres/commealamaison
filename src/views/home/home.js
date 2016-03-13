@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-export default function($scope, $http){
+export default ($scope, $http) => {
 	$scope.maValue = 'Ma valeur';
 
 	$scope.testFunction = () => {
@@ -10,13 +10,8 @@ export default function($scope, $http){
 				$scope.users = data;
 				console.log($scope.users);
 			});
+
+
 		}
-		$http.post('/user', {
-			firstName: 'Jean',
-			lastName: 'Dupond',
-			email: 'jean.dupond@gmail.com'
-		}).success(response => {
-			console.log(response);
-		});
 	}
 }
