@@ -1,3 +1,47 @@
 <div class="contact-page">
-	<h2>Contact</h2>
+	<div class="greyBackground">
+		<div class="container contactezNous">
+			<h1>Contactez-nous</h1>
+			<h3>Pour toute demande d'information, n'hésitez pas à nous contacter</h3>
+			<br>
+			<div style="margin-left:10px">
+				<form action="home" method="post" accept-charset="utf-8" ><div style="display:none">
+					<input type="hidden"/>
+					</div>	
+					<div class="row">
+						<div class="col-md-3">
+							<label for="last_name">Nom <span class="required">*</span></label>
+							<br />
+							<input id="last_name" type="text" name="last_name"  />
+						</div>
+						<div class="col-md-3">
+							<label for="first_name">Prénom <span class="required">*</span></label>
+							<br /><input id="first_name" type="text" name="first_name" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<label for="email_address">E-mail <span class="required">*</span></label>
+							<br /><input type="text" name="email_address"/>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-12">
+							<label for="message">Votre message <span class="required">*</span></label>
+							<br />									
+							<textarea name="message" cols="80" rows="5" class="form-control" ></textarea>				</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-12">
+							<div></div>
+							<p class="text-center">
+								<input type="submit" value="Envoyer" class="envoyer" />
+							</p>
+						</div>
+					</div>
+				</form> 		</div>
+		</div>
+	</div>
 </div>
