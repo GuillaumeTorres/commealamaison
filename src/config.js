@@ -44,6 +44,11 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 			template: require('views/notice/list.html'),
 			controller: noticeController
 		})
+		.state('listoffersNotice', {
+			url: '/notice/listoffers',
+			template: require('views/notice/listoffers.html'),
+			controller: noticeController
+		})
 		.state('newNotice', {
 			url: '/notice/new',
 			template: require('views/notice/new.html'),

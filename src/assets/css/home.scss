@@ -54,20 +54,20 @@
 	figcaption{
 
 		color: green;
-		font-family: cursive;
+		font-family:'Montserrat', sans-serif;
 		font-size: 1.5em;
 		margin-top: 12.8em;
 		margin-bottom: 2em;
 	}
 	h2{
 		color: green;
-		font-family: cursive;
+		font-family:'Montserrat', sans-serif;
 		font-size: 2.15em;
 		margin-left: 10px;
 	}
 	h1{
 		color : green;
-		font-family: times, serif;
+		font-family:'Montserrat', sans-serif;
 		font-size: 6em;
 		margin-bottom: 0;
 		margin-top: 0;
@@ -75,20 +75,20 @@
 	}
 	h3{
 		color: green;
-		font-family: cursive;
+		font-family:'Montserrat', sans-serif;
 		margin-bottom: 25px;
 
 	}
 	h4{
 		color: green;
 		float: right;
-		font-family: cursive;
+		font-family:'Montserrat', sans-serif;
 		font-size: 2.5em;
 		margin-top: auto;
 	}
 	h6{
 		float: right;
-		font-family: cursive;
+		font-family:'Montserrat', sans-serif;
 		margin-right: 10px;
 
 	}
@@ -106,8 +106,8 @@
 	
 	#voisin{
 		height: 150px;
-		margin-left: 0;
 		margin-right: 20px;
+		margin-left: -200px;
 		width: 200px;
 		background: url('../img/entraidevoisins.jpg') no-repeat;
 		background-size: contain;
