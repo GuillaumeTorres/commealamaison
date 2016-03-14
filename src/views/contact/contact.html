@@ -1,35 +1,36 @@
 <div class="contact-page">
 	<div class="greyBackground">
-		<div class="container contactezNous">
+		<div class="container">
 			<h1>Contactez-nous</h1>
-			<h3>Pour toute demande d'information, n'hésitez pas à nous contacter</h3>
-			<br>
-			<div style="margin-left:10px">
+			<h2>Pour toute demande d'information, n'hésitez pas à nous contacter.</h2>
+			<div class="formulaire">
+				<br>
 				<form action="home" method="post" accept-charset="utf-8" >
 					<div style="display:none">
 						<input type="hidden"/>
 					</div>	
 					<div class="row">
 						<div class="col-md-3">
-							<label for="last_name">Nom <span class="required">*</span></label>
-							<br />
-							<input id="last_name" type="text" name="last_name"  />
+							<label for="first_name">Prénom</label>
+							<br /><input id="first_name" type="text" name="first_name" class= "form-control"/>
 						</div>
 						<div class="col-md-3">
-							<label for="first_name">Prénom <span class="required">*</span></label>
-							<br /><input id="first_name" type="text" name="first_name" />
+							<label for="last_name">Nom</label>
+							<br />
+							<input id="last_name" type="text" name="last_name" class= "form-control" />
 						</div>
 					</div>
+					<br>
 					<div class="row">
-						<div class="col-md-6">
-							<label for="email_address">E-mail <span class="required">*</span></label>
-							<br /><input type="text" name="email_address"/>
+						<div class="col-md-3">
+							<label for="email_address">Adresse Mail</label>
+							<br /><input type="text" name="email_address" class= "form-control"/>
 						</div>
 					</div>
 					<br>
 					<div class="row">
 						<div class="col-md-12">
-							<label for="message">Votre message <span class="required">*</span></label>
+							<label for="message">Votre Message</label>
 							<br />									
 							<textarea name="message" cols="80" rows="5" class="form-control" ></textarea>
 						</div>
@@ -41,8 +42,6 @@
 							<p class="text-center">
 								<input type="submit" value="Envoyer" class="envoyer" />
 							</p>
-							<br>
-							<br>
 						</div>
 					</div>
 				</form>

@@ -1,18 +1,12 @@
 .notice-page{
-	h2{
-		font-family: cursive;
-		text-align: center;
-		font-size: 3.5em;
-		color: green;
-	}
 	h1{
-		font-family: cursive;
+		font-family:'Montserrat', sans-serif;
 		text-align: center;
 		font-size: 4em;
 		color: green;
 	}
-	h3{
-		font-family: cursive;
+	h2{
+		font-family:'Montserrat', sans-serif;
 		color: green;
 	}
 		
@@ -22,6 +16,7 @@
 	   margin: 2px 2px 2px 2px; 
 	   overflow: hidden;
 	   width: 200px;
+	   font-size: 1.2em;
 	}
 	#description{
 		margin-top: 0;
@@ -36,11 +31,12 @@
 	border-style: solid;  
 	border-width: 1px;   
 	color: #ffffff;      
-	font-weight: normal;    
+	font-weight: normal;  
+	margin-bottom: 7px;
 	}
 	#titre{
 		height: 50px;
-		margin-left: 270px; 
+		margin-left: 140px; 
 		text-align: center;
 		width: 600px;
 		font-size: 2.5em;
@@ -81,6 +77,11 @@
 		background-size:cover;
 	}
 	.col-md-6 .col-md-offset-3{
+		float: right;
+	}
+	#gris{
+		background-color: lightgray;
+		padding-top: 10px;
 		float: right;
 	}
 	#machin{
