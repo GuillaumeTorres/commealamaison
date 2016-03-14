@@ -1,5 +1,5 @@
 <div class="notice-page">
-<h2>Modifier Annonce</h2>
+<h2>Modifier Annonce </h2>
 <br>
 	<div class="container-fluid">
 		<div class="row">
@@ -12,16 +12,16 @@
 					<option value="value4">Jardinage</option>
 					<option value="value5">Électricité</option>
 				</select>
-				<input type="text" id="titre" placeholder="Titre">
+				<input type="text" id="titre" placeholder="Titre" ng-model="title">
 				<br>
 				<label for="description"><h3>
 							Description de l'annonce : </h4>
 				</label>
 				<br />
-				<textarea name="description" id="description" rows="20" cols="200">
+				<textarea name="description" id="description" rows="20" cols="200" ng-model="description">
 				</textarea>
 				<br>
-				<form action=""  method="get">
+				<form action=""  method="get" ng-submit="edit()">
 					<input id="publier" type="submit" value="Publier"/>
 				</form>
 				<br>
