@@ -1,0 +1,50 @@
+.listoffers-page{
+	h1{
+		font-family:'Montserrat', sans-serif;
+		text-align: center;
+		font-size: 4em;
+		color: green;
+	}
+	h2{
+		font-family:'Montserrat', sans-serif;
+		color: green;
+	}
+	td{
+		border: 1px solid black; 
+		font-size: 1.5em;
+		padding-left: 15px;
+	}
+	#plomberie{
+		height: 200px;
+		width: 200px;
+		background: url('../img/plomberie.jpg')no-repeat;
+		background-size:cover;
+	}
+	#peinture{
+		height: 200px;
+		width: 200px;
+		background: url('../img/peinture.jpg')no-repeat;
+		background-size:cover;
+	}
+	#outils{
+		height: 200px;
+		width: 200px;
+		background: url('../img/outils.jpg')no-repeat;
+		background-size:cover;
+	}
+	#jardinage{
+		height: 200px;
+		width: 200px;
+		background: url('../img/jardinage.jpg')no-repeat;
+		background-size:cover;
+	}
+	#elect{
+		height: 200px;
+		width: 200px;
+		background: url('../img/electrique.jpg')no-repeat;
+		background-size:cover;
+	}
+	.col-md-6 .col-md-offset-3{
+		float: right;
+	}
+}
