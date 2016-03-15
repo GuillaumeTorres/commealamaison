@@ -8,6 +8,7 @@ var User = mongoose.model('User', {
 	lastName: String,
 	email: String,
 	password: String,
+	salt: String,
 	address: {
 		rue: String,
 		city: String,
