@@ -1,6 +1,6 @@
 .header-logo{
-	width: 100px;
-	height: 100px;
+	width: 5em;
+	height: 5em;
 	background: url('../img/Logo.png') no-repeat;
 	background-size: contain;
 }
@@ -9,13 +9,14 @@
 	height: 140px;
 	background: url('../img/banner.jpg');
 	background-size: cover;
+	margin-top: 0;
 
 	.menu{
 		height: 40px;
 		line-height: 40px;
-		
+
 		background-color: rgba(0,0,0,0.7);
-		position: absolute;
+		position:absolute;
 		top: 100px;
 		right: 80px;
 		padding-left: 15px;
@@ -49,5 +50,24 @@
 	.btn-group{
 		text-align: center;
 		height: 34px;
+	}
+	@media screen and (max-width:600px){
+		.header-logo{
+			width: 4em;
+			height: 4em;
+		}
+		h6{
+			font-size: 0.7em;
+		}
+		.navbar{
+			margin-top: 0;
+		}
+		.btn-group{
+			width: 25%;
+			height: 20%;
+		}
+		.btn btn-default navbar-btn{
+			color: red;
+		}
 	}
 }
