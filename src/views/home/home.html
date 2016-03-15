@@ -9,12 +9,6 @@
 		<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12" id="bordure">
-				<label>
-					<input type="radio" id="radio" name="grad" value="Offres" CHECKED/>Offres
-				</label>
-				<label>
-					<input type="radio" id="radio" name="grad" value="Demandes" />Demandes
-				</label>
 				<select name="Activité" class="styled-select">
 					<option value="value0" selected disabled>Activité</option> 
 					<option value="value1">Plomberie</option> 
@@ -23,7 +17,6 @@
 					<option value="value4">Jardinage</option>
 					<option value="value5">Électricité</option>
 				</select>
-				<input type="text" class="btn-group" placeholder="Ville">
 				<select name="Rayon" class="styled-select">
 					<option value="value0" selected disabled>Rayon</option> 
 					<option value="value1">1Km</option> 
@@ -31,7 +24,7 @@
 					<option value="value3">10Km</option>
 					<option value="value4">30Km</option>
 				</select>
-				<form action="" method="get">
+				<form action="listoffers" method="get">
 					<input id="search-btn" type="submit" value="Rechercher"/>
 				</form>
 			</div>
