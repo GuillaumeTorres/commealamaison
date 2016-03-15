@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import homeController from 'views/home/home';
+import layoutController from 'views/layout/layout';
 import mapsController from 'views/maps/maps';
 import noticeController from 'views/notice/notice';
 import showController from 'views/notice/show';
@@ -14,10 +15,20 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 	$urlRouterProvider.otherwise('/');
 
 	$stateProvider
+		.state('main', {
+			abstract: true,
+			views: {
+				layout: {
+					template: require('views/layout/layout.html')
+				}
+		    },
+		    controller: layoutController
+		})
 		.state('home', {
 			url: '/',
 			template: require('views/home/home.html'),
-			controller: homeController
+			controller: homeController,
+			parent: 'main'
 		})
 		.state('register', {
 			url: '/register',
