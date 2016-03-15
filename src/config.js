@@ -4,6 +4,7 @@ import homeController from 'views/home/home';
 import mapsController from 'views/maps/maps';
 import noticeController from 'views/notice/notice';
 import showController from 'views/notice/show';
+import editController from 'views/notice/edit';
 import registerController from 'views/register/register';
 import settingsController from 'views/settings/settings';
 import contactController from 'views/contact/contact';
@@ -57,7 +58,7 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 		.state('editNotice', {
 			url: '/notice/edit',
 			template: require('views/notice/edit.html'),
-			controller: noticeController
+			controller: editController
 		})
 		.state('showNotice', {
 			url: '/notice/show',

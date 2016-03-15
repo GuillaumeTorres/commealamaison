@@ -1,9 +1,10 @@
 <div class="notice-page">
-	<h1>Modifier Annonce</h1>
-	<div class="container">
-		<div class="row" id="gris">
+<h2>Modifier Annonce </h2>
+<br>
+	<div class="container-fluid">
+		<div class="row">
 			<div class="col-xs-12">
-				<select name="Activité" class="styled-select">
+				<select name="Activité" class="styled-select" ng-model="edit.type">
 					<option value="value0" selected disabled>Activité</option> 
 					<option value="value1">Plomberie</option> 
 					<option value="value2">Peinture</option>
@@ -11,20 +12,22 @@
 					<option value="value4">Jardinage</option>
 					<option value="value5">Électricité</option>
 				</select>
-				<input type="text" id="titre" placeholder="Titre">
+				<input type="text" id="titre" ng-model="edit.title" >
 				<br>
-				<label for="description"><h2>
-					Description de l'annonce : </h2>
+				<label for="description"><h3>
+							Description de l'annonce :{{edit.created | date:'MM/dd/yyyy HH:mm:ss'}} </h4>
 				</label>
 				<br />
-				<textarea name="description" id="description" rows="17" cols="150">
+				<textarea name="description" id="description" rows="20" cols="200" ng-model="edit.description">
 				</textarea>
 				<br>
-				<form action=""  method="get">
+				<form action=""  method="get" ng-submit="editt()">
 					<input id="publier" type="submit" value="Publier"/>
 				</form>
+				<br>
 			</div>
+			
 		</div>
 	</div>
-	<br>
+	
 </div>
