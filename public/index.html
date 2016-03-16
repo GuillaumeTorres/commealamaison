@@ -4,76 +4,7 @@
 		<title class="text-center">Comme à la maison</title>
 		<base href="/">
 	</head>
-	<body>
-		<div class="header">
-			<a class="navbar-brand" ui-sref="home">
-				<div class="header-logo"></div>
-			</a>
-			<form class="navbar-form navbar-right" >
-					<input type="text" class="btn-group" role="group" placeholder="Adresse Mail">
-					<input type="text" class="btn-group" role="group" placeholder="Mot de passe">
-				<a ui-sref="resetpass">
-					<h6>Mot de Passe oublié ?</h6>
-				</a>
-				<button type="button" class="btn btn-default navbar-btn">Connexion</button>
-				<button ui-sref="register" type="button" class="btn btn-default navbar-btn">Inscription</button>
-			</form>
-			<div class="menu">
-				<nav>
-					<ul>
-						<li><a ui-sref="home"><h8>Accueil</h8></a></li>
-						<li><a ui-sref="newNotice"><h8>Nouvelle Annonce</h8></a></li>
-						<li><a ui-sref="contact"><h8>Contactez Nous</h8></a></li>
-					</ul>
-				</nav>
-			</div>
-		</div>
-		<div ui-view></div>
-		<footer>
-			<div id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="contactinfo col-sm-3 main-el">
-							<div class="divider divider-5">
-								<h5>Contact Info</h5>
-							</div>
-							<div class="contact-widget">
-								<div class="line">
-									<i class="address"></i> <div class="text">27 avenue de Fontarrabie 75020 Paris</div>
-								</div>
-								<div class="line">
-									<i class="phone"></i>
-									<div class="text">01.64.49.72.11</div>
-								</div>
-								<div class="line">
-									<i class="mail"></i>
-									<div class="text">contact @ CommealaMaison.com</div>
-								</div>
-								<div class="line">
-									<i class="site"></i>
-									<div class="text"><a href="" target="_blank">www.CommealaMaison.com</a></div>
-								</div>
-							</div>
-						</div><div class=" col-sm-3 main-el">
-						<div class="textwidget"><div class="divider divider-5"><h5>Services</h5><div class="separator"></div></div>
-							<i class="bas"></i><a href="" title="Partenaires">Partenaires</a>
-							<br/><i class="bas"></i><a href="" title="espaces publicitaires localisés">Espaces publicitaires</a><br/><i class="bas"></i>
-							<a href="">Comment ça marche ?</a><br/>
-						</div>
-						</div>
-					</div>
-				</div>
-				<br>
-				<div id="botbar">
-					<div class="container">
-						<p class="copyright-text">
-							&#169; Copyright 2016 - <a href="/mentions-legales">Mentions légales</a> - <a href="/conditions-generales-dutilisation">Conditions générales
-							d'utilisation</a>
-						</p>     
-					</div>
-				</div>
-			</div>
-		</footer>
+	<body ui-view="layout">
 		<script src="bundle.js"></script>
 	</body>
 </html>

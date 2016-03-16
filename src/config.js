@@ -1,6 +1,7 @@
 import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import homeController from 'views/home/home';
+import layoutController from 'views/layout/layout';
 import mapsController from 'views/maps/maps';
 import noticeController from 'views/notice/notice';
 import showController from 'views/notice/show';
@@ -14,60 +15,80 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 	$urlRouterProvider.otherwise('/');
 
 	$stateProvider
+		.state('main', {
+			abstract: true,
+			views: {
+				layout: {
+					template: require('views/layout/layout.html')
+				}
+		    },
+		    controller: layoutController
+		})
 		.state('home', {
 			url: '/',
 			template: require('views/home/home.html'),
-			controller: homeController
+			controller: homeController,
+			parent: 'main'
 		})
 		.state('register', {
 			url: '/register',
 			template: require('views/register/register.html'),
-			controller: registerController
+			controller: registerController,
+			parent: 'main'
 		})
 		.state('resetpass', {
 			url: '/reset-password',
 			template: require('views/register/resetpass.html'),
-			controller: registerController
+			controller: registerController,
+			parent: 'main'
 		})
 		.state('maps', {
 			url: '/maps',
 			template: require('views/maps/maps.html'),
-			controller: mapsController
+			controller: mapsController,
+			parent: 'main'
 		})
 		.state('settings', {
 			url: '/settings',
 			template: require('views/settings/settings.html'),
-			controller: settingsController
+			controller: settingsController,
+			parent: 'main'
 		})
 		.state('notice', {
 			url: '/notice/list',
 			template: require('views/notice/list.html'),
-			controller: noticeController
+			controller: noticeController,
+			parent: 'main'
 		})
 		.state('listoffers', {
 			url: '/listoffers',
 			template: require('views/notice/listoffers.html'),
-			controller: noticeController
+			controller: noticeController,
+			parent: 'main'
 		})
 		.state('newNotice', {
 			url: '/notice/new',
 			template: require('views/notice/new.html'),
-			controller: noticeController
+			controller: noticeController,
+			parent: 'main'
 		})
 		.state('editNotice', {
 			url: '/notice/edit',
 			template: require('views/notice/edit.html'),
-			controller: noticeController
+			controller: noticeController,
+			parent: 'main'
 		})
 		.state('showNotice', {
 			url: '/notice/show',
 			template: require('views/notice/show.html'),
-			controller: showController
+			controller: showController,
+			parent: 'main'
 		})
 		.state('contact', {
 			url: '/contact',
 			template: require('views/contact/contact.html'),
-			controller: contactController
+			controller: contactController,
+			parent: 'main'
 		})
 
 	$locationProvider.html5Mode(true);
