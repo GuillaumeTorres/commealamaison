@@ -12,7 +12,7 @@ export default ($scope, $http, $state) => {
 				$scope.registered = true;
 				setTimeout(() => {
 					$state.go('home');
-				}, 5000);
+				}, 2000);
 			});
 		}
 	};
