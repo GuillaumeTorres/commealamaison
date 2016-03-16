@@ -50,6 +50,17 @@
 		text-align: center;
 		height: 34px;
 	}
+	.logout{
+		float: right;
+		margin: 10px 20px 0 0;
+		background-color: rgba(0,0,0,0.7);
+		padding: 5px 10px;
+		color: white;
+		font-weight: bold;
+		button{
+			margin-left: 10px;
+		}
+	}
 	@media screen and (max-width:600px){
 		.header-logo{
 			width: 4em;
