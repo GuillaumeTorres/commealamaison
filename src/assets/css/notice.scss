@@ -136,7 +136,7 @@
 		height: 300px;
 		width: 300px;
 		background: url('../img/jardinage.jpg')no-repeat;
-		background-size:cover;
+		background-size:contain;
 		margin-bottom: 5%;
 	}
 	#date{
@@ -172,6 +172,9 @@
 			margin-top: 0;
 			margin-right: 0;
 		}
-		
+		#unique{
+			padding-top: 20px;
+
+		}
 	}
 }
