@@ -125,7 +125,11 @@
 
 	#cs13 {
 		width: 100%;
-		height: 100%;   
+		height: 100%;
+		h2 {
+			margin-top: -40px;
+			margin-bottom: 60px;
+		}
 	}
 	#jardinage2{
 		height: 300px;
@@ -133,5 +137,9 @@
 		background: url('../img/jardinage.jpg')no-repeat;
 		background-size:cover;
 		margin-bottom: 5%;
+	}
+	#date{
+		float: right;
+		margin-top: 60px;
 	}
 }
