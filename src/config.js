@@ -1,5 +1,8 @@
 import angular from 'angular';
+
 import uiRouter from 'angular-ui-router';
+import ngStorage from 'ngStorage';
+
 import homeController from 'views/home/home';
 import layoutController from 'views/layout/layout';
 import mapsController from 'views/maps/maps';
@@ -9,7 +12,7 @@ import registerController from 'views/register/register';
 import settingsController from 'views/settings/settings';
 import contactController from 'views/contact/contact';
 
-const app = angular.module('app', [uiRouter]);
+const app = angular.module('app', [uiRouter, 'ngStorage']);
 
 app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 	$urlRouterProvider.otherwise('/');
@@ -19,10 +22,10 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 			abstract: true,
 			views: {
 				layout: {
-					template: require('views/layout/layout.html')
+					template: require('views/layout/layout.html'),
+					controller: layoutController
 				}
-		    },
-		    controller: layoutController
+		    }
 		})
 		.state('home', {
 			url: '/',
@@ -92,6 +95,13 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 		})
 
 	$locationProvider.html5Mode(true);
+});
+
+app.run( ($rootScope) => {
+    $rootScope.truc = 'coucou je suis le test !';
+    $rootScope.testf = () => {
+    	console.log('HEY');
+    }
 });
 
 export default app;
