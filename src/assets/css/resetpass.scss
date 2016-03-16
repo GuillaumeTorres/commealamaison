@@ -13,13 +13,12 @@
 	.btn-group{
 		text-align: center;
 		height: 30px;
-		width: 250px;
-		margin-left: 550px;
+		width: 200px;
 		float: left;
 	}
 	.bouton{
 		font-size: 1.25em;
-		width: 150px;
+		width: 200px;
 		height: 30px;
 		background-color: orange;
 		border-color: orange; 
@@ -28,5 +27,17 @@
 		color: #ffffff;      
 		font-weight: normal;
 		margin-left: 2px;
+		text-align: center;
+	}
+	.aligner{
+		margin-left: 550px;
+	}
+	@media screen and (max-width:1175px){
+		.bouton{
+			margin-left: 0;
+		}
+		.aligner{
+			margin-left: 30%;
+		}
 	}
 }
