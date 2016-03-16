@@ -1,31 +1,19 @@
 import angular from 'angular';
 
-export default ($scope, $http) => {
-	$scope.register = () => {
-		let recup = {
-			last: $scope.lastname,
-			first: $scope.firstname,
-			email: $scope.email
-		};
-		console.log(recup);
-
-		let data = {
-			firstName: 'PROMISE',
-			lastName: 'TEST',
-			email: 'jean.dupond@gmail.com',
-			address: {
-				rue: '9 rue de la Paix',
-				city: 'Paris',
-				postal_code: '75002'
-			},
-			phone_number: '0683165620',
-			coordinate: {
-				long: 2.331241099999943,
-				lat: 48.8687607
-			}
-		};
-		$http.post('/users', data).success(response => {
-			console.log(response);
-		});
-	}
+export default ($scope, $http, $state) => {
+	$scope.registered = false;
+	$scope.invalidPass = false;
+	$scope.register = (data) => {
+		$scope.invalidPass = false;
+		if($scope.passwordConfirm != data.password){
+			$scope.invalidPass = true;
+		}else{
+			$http.post('/auth/signin', data).success(response => {
+				$scope.registered = true;
+				setTimeout(() => {
+					$state.go('home');
+				}, 5000);
+			});
+		}
+	};
 }
