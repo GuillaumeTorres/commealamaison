@@ -65,9 +65,13 @@
 		.header-logo{
 			width: 4em;
 			height: 4em;
+			margin-left: 0px;
 		}
 		h6{
-			font-size: 0.7em;
+			margin-top: 0;
+			margin-bottom: 10px;
+			font-size: 85%;
+			float: right;
 		}
 		.navbar{
 			margin-top: 0;
@@ -76,8 +80,27 @@
 			width: 25%;
 			height: 20%;
 		}
-		.btn btn-default navbar-btn{
-			color: red;
+		button.btn.btn-default.navbar-btn{
+			display: inline;
+			height: 30px;
+			width: 80px;
+			text-align: center;
+			padding-left: 5px;
 		}
+		.menu{
+			width: 320px;
+			text-align: center;
+			line-height: 40px;
+			margin-top: 5px;
+			margin-right: -30px;
+			padding-bottom: 43px;
+		}
+		.ul{
+			margin-left: 10px;
+		}
+		::-webkit-input-placeholder{
+			font-size: 0.9em;
+		}
+
 	}
 }
