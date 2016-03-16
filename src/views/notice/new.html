@@ -1,33 +1,37 @@
 <div class="notice-page">
 	<h1>Nouvelle Annonce</h1>
 	<br>
-	<div class="container">
+	<div class="container nologged" ng-show="!logged">
+		<p>Vous avez du talent pour la peinture, la plomberie, le jardinage ou l'électricité ?<br>
+		<a ui-sref="register">Inscrivez-vous</a> dès maintenant pour pouvoir poster votre annonce !</p>
+	</div>
+	<div class="container" ng-show="logged">
 		<div class="row" id="gris">
 			<div class="col-xs-12">
+				<form ng-submit="newNotice(notice)">
 				<div>
-					<select name="Activité" class="styled-select">
-						<option value="value0" selected disabled>Activité</option> 
-						<option value="value1">Plomberie</option> 
-						<option value="value2">Peinture</option>
-						<option value="value3">Prêt de matériel</option>
-						<option value="value4">Jardinage</option>
-						<option value="value5">Électricité</option>
+					<select class="styled-select" ng-model="notice.type" required>
+						<option value="" selected disabled>Activité</option> 
+						<option value="Plomberie">Plomberie</option> 
+						<option value="Peinture">Peinture</option>
+						<option value="Jardinage">Jardinage</option>
+						<option value="Électricité">Électricité</option>
 					</select>
-					<input type="text" id="titre" placeholder="Titre">
+					<input type="text" id="titre" placeholder="Titre" ng-model="notice.title" required>
+
 				</div>
 				<br>
 				<label for="description"><h2>
 					Description de l'annonce : </h2>
 				</label>
 				<br />
-				<textarea name="description" id="description" rows="17" cols="150">
+				<textarea name="description" id="description" rows="17" cols="150" ng-model="notice.description" required>
 				</textarea>
 				<br>
-				<form action="home"  method="get">
 					<input id="publier" type="submit" value="Publier"/>
+					<p class="bg-success" ng-show="noticeCreated">Votre annonce a été créée</p>
 				</form>
 			</div>
-
 		</div>
 	</div>
 	<br>

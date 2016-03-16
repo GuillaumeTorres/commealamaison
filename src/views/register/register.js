@@ -1,6 +1,9 @@
 import angular from 'angular';
 
-export default ($scope, $http, $state) => {
+export default ($scope, $http, $state, $localStorage) => {
+	if($localStorage.user){
+		$state.go('home');
+	}
 	$scope.registered = false;
 	$scope.invalidPass = false;
 	$scope.register = (data) => {
