@@ -33,52 +33,62 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 		.state('register', {
 			url: '/register',
 			template: require('views/register/register.html'),
-			controller: registerController
+			controller: registerController,
+			parent: 'main'
 		})
 		.state('resetpass', {
 			url: '/reset-password',
 			template: require('views/register/resetpass.html'),
-			controller: registerController
+			controller: registerController,
+			parent: 'main'
 		})
 		.state('maps', {
 			url: '/maps',
 			template: require('views/maps/maps.html'),
-			controller: mapsController
+			controller: mapsController,
+			parent: 'main'
 		})
 		.state('settings', {
 			url: '/settings',
 			template: require('views/settings/settings.html'),
-			controller: settingsController
+			controller: settingsController,
+			parent: 'main'
 		})
 		.state('notice', {
 			url: '/notice/list',
 			template: require('views/notice/list.html'),
-			controller: noticeController
+			controller: noticeController,
+			parent: 'main'
 		})
 		.state('listoffers', {
 			url: '/listoffers',
 			template: require('views/notice/listoffers.html'),
-			controller: noticeController
+			controller: noticeController,
+			parent: 'main'
 		})
 		.state('newNotice', {
 			url: '/notice/new',
 			template: require('views/notice/new.html'),
-			controller: noticeController
+			controller: noticeController,
+			parent: 'main'
 		})
 		.state('editNotice', {
 			url: '/notice/edit',
 			template: require('views/notice/edit.html'),
-			controller: noticeController
+			controller: noticeController,
+			parent: 'main'
 		})
 		.state('showNotice', {
 			url: '/notice/show',
 			template: require('views/notice/show.html'),
-			controller: showController
+			controller: showController,
+			parent: 'main'
 		})
 		.state('contact', {
 			url: '/contact',
 			template: require('views/contact/contact.html'),
-			controller: contactController
+			controller: contactController,
+			parent: 'main'
 		})
 
 	$locationProvider.html5Mode(true);
