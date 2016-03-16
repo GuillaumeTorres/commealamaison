@@ -14,7 +14,6 @@ var User = mongoose.model('User', {
 		city: String,
 		postal_code: String
 	},
-	phone_number: String,
 	coordinate: {
 		long: Number,
 		lat: Number

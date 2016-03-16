@@ -1,6 +1,6 @@
 import angular from 'angular';
 
-export default ($scope, $http, $localStorage, $sessionStorage) => {
+export default ($scope, $http, $localStorage, $state) => {
 	$scope.logged = $localStorage.user ? true : false;
 	$scope.user = $localStorage.user;
 
@@ -15,6 +15,9 @@ export default ($scope, $http, $localStorage, $sessionStorage) => {
 			$localStorage.user = data;
 			$scope.logged = true;
 		});
+		$scope.email = '';
+		$scope.password = '';
+		$state.go('home');
 	}
 
 	$scope.logout = () => {
