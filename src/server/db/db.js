@@ -10,7 +10,7 @@ var User = mongoose.model('User', {
 	password: String,
 	salt: String,
 	address: {
-		rue: String,
+		street: String,
 		city: String,
 		postal_code: String
 	},
