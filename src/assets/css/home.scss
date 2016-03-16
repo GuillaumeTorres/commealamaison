@@ -15,6 +15,7 @@
 		margin-top: 5px;
 		padding: 5px 5px 5px 5px; 
 		text-align: center;
+		height: 50% !important;
 	}
 	img{
 		height: 300px;
@@ -163,22 +164,33 @@
 	@media screen and (max-width:600px){
 		#bordure{
 			height:15em;
+			margin-bottom: 0;
 		}
 		#plomberie{
-			margin-left: 22.5%;
+			margin-left: 15%;
 		}
 		#peinture{
-			margin-left: 22.5%;
+			margin-left: 15%;
 		}
 		#jardinage{
-			margin-left: 22.5%;
+			margin-left: 15%;
 		}
 		#elect{
-			margin-left: 22.5%;
+			margin-left: 15%;
 		}
 		#outils{
-			margin-left: 22.5%;
+			margin-left: 15%;
 		}
+		.menu{
+			width: 280px;
+		}
+		select.styled-select{
+			margin-top: 20px;
+		}
+		#search-btn{
+			margin-top: 20px;
+		}
+			
 	}
 }
 
