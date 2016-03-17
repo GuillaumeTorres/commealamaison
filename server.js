@@ -3,6 +3,9 @@ var app = express();
 var bodyParser = require('body-parser');
 var path = require('path');
 var routes = require('./src/server/routes');
+var env = require('node-env-file')
+
+env(__dirname + '/.env');
 
 var PORT = process.env.PORT || 3000;
 
