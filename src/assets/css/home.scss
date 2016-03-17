@@ -1,20 +1,21 @@
 .home-page{
 	.styled-select {
-	   border: 1px solid #ccc;
-	   height: 34px;
-	   margin: 2px 2px 2px 2px; 
-	   overflow: hidden;
-	   width: 200px;
-	   }
+		border: 1px solid #ccc;
+		height: 34px;
+		margin: 2px 2px 2px 2px; 
+		overflow: hidden;
+		width: 200px;
+	}
 	#bordure {
-	  background-color: powderblue;  
-	  border-color: chartreuse; 
-	  border-width: 0.1px;   
-	  float: left;
-	  margin-right: 0;
-	  margin-top: 5px;
-	  padding: 5px 5px 5px 5px; 
-	  text-align: center;
+		background-color: powderblue;  
+		border-color: chartreuse; 
+		border-width: 0.1px;   
+		float: left;
+		margin-right: 0;
+		margin-top: 5px;
+		padding: 5px 5px 5px 5px; 
+		text-align: center;
+		height: 50% !important;
 	}
 	img{
 		height: 300px;
@@ -22,7 +23,7 @@
 		margin-right: 10px;
 		width: 250px;
 	}
-	.btn-group{
+	#btn-group{
 		height: 34px;
 		margin: 2px 2px 2px 2px; 
 		text-align: center;
@@ -30,19 +31,19 @@
 	}
 
 	#search-btn {
-	  background-color: orange;
-	  border-color: orange; 
-	  border-style: solid;  
-	  border-width: 1px;   
-	  color: #ffffff;   
-	  font-family: PT sans;   
-	  font-size: 13px;  
-	  font-weight: normal;
-	  letter-spacing: 2px;   
-	  margin: 10px 2px 2px 2px;
-	  padding: 5px 5px 5px 5px;
-	  text-transform: uppercase;   
-	  width: 200px;  
+		background-color: orange;
+		border-color: orange; 
+		border-style: solid;  
+		border-width: 1px;   
+		color: #ffffff;   
+		font-family: PT sans;   
+		font-size: 13px;  
+		font-weight: normal;
+		letter-spacing: 2px;   
+		margin: 10px 2px 2px 2px;
+		padding: 5px 5px 5px 5px;
+		text-transform: uppercase;   
+		width: 200px;  
 	}
 	body {
 		background-attachment: fixed;
@@ -54,20 +55,21 @@
 	figcaption{
 
 		color: green;
-		font-family: cursive;
+		font-family:"Comic Sans MS", cursive, sans-serif;
 		font-size: 1.5em;
 		margin-top: 12.8em;
 		margin-bottom: 2em;
+		text-align: center;
 	}
 	h2{
 		color: green;
-		font-family: cursive;
+		font-family:"Comic Sans MS", cursive, sans-serif;
 		font-size: 2.15em;
 		margin-left: 10px;
 	}
 	h1{
 		color : green;
-		font-family: times, serif;
+		font-family:"Comic Sans MS", cursive, sans-serif;
 		font-size: 6em;
 		margin-bottom: 0;
 		margin-top: 0;
@@ -75,20 +77,20 @@
 	}
 	h3{
 		color: green;
-		font-family: cursive;
+		font-family:"Comic Sans MS", cursive, sans-serif;
 		margin-bottom: 25px;
 
 	}
 	h4{
 		color: green;
 		float: right;
-		font-family: cursive;
+		font-family:"Comic Sans MS", cursive, sans-serif;
 		font-size: 2.5em;
 		margin-top: auto;
 	}
 	h6{
 		float: right;
-		font-family: cursive;
+		font-family:"Comic Sans MS", cursive, sans-serif;
 		margin-right: 10px;
 
 	}
@@ -96,18 +98,15 @@
 	.float2{
 		float: right;
 	}
-	
+
 	.float{
 		float: left;
-		text-align: center;
-		vertical-align: middle;
-
 	}
-	
+
 	#voisin{
 		height: 150px;
-		margin-left: 0;
 		margin-right: 20px;
+		margin-left: -200px;
 		width: 200px;
 		background: url('../img/entraidevoisins.jpg') no-repeat;
 		background-size: contain;
@@ -117,7 +116,7 @@
 		margin-right: 5px;
 	}
 	#plomberie{
-		margin-left: 15vmin;
+		margin-left: 8.5%;
 		height: 300px;
 		margin-right: 10px;
 		width: 250px;
@@ -155,6 +154,43 @@
 		width: 250px;
 		background: url('../img/electrique.jpg')no-repeat;
 		background-size:contain;
+	}
+	@media screen and (max-width:1211px){
+		#voisin{
+			display: none;
+		}
+	}
+
+	@media screen and (max-width:600px){
+		#bordure{
+			height:15em;
+			margin-bottom: 0;
+		}
+		#plomberie{
+			margin-left: 15%;
+		}
+		#peinture{
+			margin-left: 15%;
+		}
+		#jardinage{
+			margin-left: 15%;
+		}
+		#elect{
+			margin-left: 15%;
+		}
+		#outils{
+			margin-left: 15%;
+		}
+		.menu{
+			width: 280px;
+		}
+		select.styled-select{
+			margin-top: 20px;
+		}
+		#search-btn{
+			margin-top: 20px;
+		}
+			
 	}
 }
 

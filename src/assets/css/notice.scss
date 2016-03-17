@@ -1,54 +1,50 @@
 .notice-page{
-	h2{
-		font-family: cursive;
-		text-align: center;
-		font-size: 3.5em;
-		color: green;
-	}
 	h1{
-		font-family: cursive;
+		font-family:"Comic Sans MS", cursive, sans-serif;
 		text-align: center;
 		font-size: 4em;
 		color: green;
 	}
-	h3{
-		font-family: cursive;
+	h2{
+		font-family:"Comic Sans MS", cursive, sans-serif;
 		color: green;
 	}
-		
+
 	.styled-select{
-	   border: 1px solid #ccc;
-	   height: 34px;
-	   margin: 2px 2px 2px 2px; 
-	   overflow: hidden;
-	   width: 200px;
+		border: 1px solid #ccc;
+		height: 34px;
+		margin: 2px 2px 2px 2px; 
+		overflow: hidden;
+		width: 200px;
+		font-size: 1.2em;
 	}
 	#description{
 		margin-top: 0;
 	}
 	#publier{
-	width: 200px;
-	height: 34px;
-	text-align: center;
-	font-size: 1.5em;
-	background-color: orange;
-	border-color: orange; 
-	border-style: solid;  
-	border-width: 1px;   
-	color: #ffffff;      
-	font-weight: normal;    
+		width: 200px;
+		height: 34px;
+		text-align: center;
+		font-size: 1.5em;
+		background-color: orange;
+		border-color: orange; 
+		border-style: solid;  
+		border-width: 1px;   
+		color: #ffffff;      
+		font-weight: normal;  
+		margin-bottom: 7px;
 	}
 	#titre{
 		height: 50px;
-		margin-left: 270px; 
+		margin-left: 140px; 
 		text-align: center;
 		width: 600px;
 		font-size: 2.5em;
 	}
 	td{
-    border: 1px solid black; 
-	font-size: 1.5em;
-	padding-left: 15px;
+		border: 1px solid black; 
+		font-size: 1.5em;
+		margin-right: 150px;
 	}
 	#plomberie{
 		height: 200px;
@@ -80,41 +76,108 @@
 		background: url('../img/electrique.jpg')no-repeat;
 		background-size:cover;
 	}
-	.col-md-6 .col-md-offset-3{
+	.col-md-8 .col-md-offset-3{
 		float: right;
 	}
+	#gris{
+		background-color: lightgray;
+		padding-top: 10px;
+		float: right;
+		border: 1px solid dimgrey;
+		text-align: center;
+	}
 	#machin{
-		font-size: 2em;
-		background-color: lightgrey;
+		font-size: 1.5em;
+		background-color: lightgray;
+		text-align: center;
 	}
 	button{
 		margin-left: 10px;
 	}
+	#special{
+		float:right;
+		margin-bottom: 10px;
+	}
+	#noidea{
+		text-align: center;
+	}
 	#bd{
-    width: 100%;
-    height: 500px;
-    background-color: white;
-    padding: 20px;
-    
-}
-#ts {
-    height: 100px;
-    margin-left: 5%;
+		width: 100%;
+		height: 500px;
+		background-color: white;
+		padding: 20px;
 
-}
+	}
+	#ts {
+		height: 50px;
+		margin-left: 5%;
 
-#cs {
-    border: 5px solid black;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
+	}
 
-#cs1 {
-    width:auto;
-}
+	#cs {
+		border: 5px solid black;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
 
-#cs13 {
-    width: 100%;
-    height: 100%;   
-}
+	#cs1 {
+		width:auto;
+	}
+
+	#cs13 {
+		width: 100%;
+		height: 100%;
+		h2 {
+			margin-top: -40px;
+			margin-bottom: 60px;
+		}
+	}
+	#jardinage2{
+		height: 300px;
+		width: 300px;
+		background: url('../img/jardinage.jpg')no-repeat;
+		background-size:contain;
+		margin-bottom: 5%;
+	}
+	#date{
+		float: right;
+		margin-top: 60px;
+	}
+	.nologged{
+		text-align: center;
+	}
+	@media screen and (max-width:1200px){
+		.container{
+			margin-left: 0;
+			margin-right: 0;
+		}
+		#gris{
+			margin-left: 0;
+			margin-right: 0;
+			text-align: center;
+			width: 100%;
+		}
+		#description{
+			width: 100%;
+		}
+		#titre{
+			margin-top: 10px;
+			padding-top: -20px;
+			margin-left: 1%;
+			width: 66.2%;
+			height: 1.5em;
+			text-align: center;
+		}
+		::-webkit-input-placeholder{
+			font-size: 0.8em;
+		}
+		select.styled-select{
+			margin-top: 0;
+			margin-right: 0;
+		}
+		#unique{
+			padding-top: 20px;
+
+		}
+	}
 }

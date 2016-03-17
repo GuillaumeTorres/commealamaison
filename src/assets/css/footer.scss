@@ -5,7 +5,7 @@
 	position: relative;
 	clear:both;
 	margin-top: 0px;
-	height: 190px;
+	height: 180px;
 
 }
 .line{
@@ -18,4 +18,9 @@ h5{
 	font-size: 1.5em;
 	color: #169;
 
+}
+@media screen and (max-width:1175px){
+	#footer{
+		height: 200%;
+	}
 }

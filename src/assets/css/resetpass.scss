@@ -1,21 +1,43 @@
 .resetpass-page{
 	h1{
-		ont-family: cursive;
+		font-family:"Comic Sans MS", cursive, sans-serif;
 		text-align: center;
 		font-size: 4em;
 		color: green;
 	}
 	h3{
 		margin-left: 30px;
+		color: green;
+		font-size: 2em;
 	}
 	.btn-group{
 		text-align: center;
 		height: 30px;
-		width: 250px;
-		margin-left: 550px;
+		width: 200px;
 		float: left;
 	}
 	.bouton{
-		font-size: 1.5em;
+		font-size: 1.25em;
+		width: 200px;
+		height: 30px;
+		background-color: orange;
+		border-color: orange; 
+		border-style: solid;  
+		border-width: 1px;   
+		color: #ffffff;      
+		font-weight: normal;
+		margin-left: 2px;
+		text-align: center;
+	}
+	.aligner{
+		margin-left: 550px;
+	}
+	@media screen and (max-width:1175px){
+		.bouton{
+			margin-left: 0;
+		}
+		.aligner{
+			margin-left: 30%;
+		}
 	}
 }

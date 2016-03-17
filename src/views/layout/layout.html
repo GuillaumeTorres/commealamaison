@@ -1,0 +1,85 @@
+<div class="header">
+	<a class="navbar-brand" ui-sref="home">
+		<div class="header-logo"></div>
+	</a>
+	<form class="navbar-form navbar-right" ng-submit="login()" ng-show="!logged">
+		<div>
+			<input type="text" class="btn-group" role="group" ng-model="email" placeholder="Adresse Mail">
+			<input type="password" class="btn-group" role="group" ng-model="password" placeholder="Mot de passe">
+		</div>
+		<div>
+			<button type="submit" class="btn btn-default navbar-btn">Connexion</button>
+			<button ui-sref="register" type="button" class="btn btn-default navbar-btn">Inscription</button>
+			<a ui-sref="resetpass">
+				<h6>Mot de Passe oublié ?</h6>
+			</a>
+		</div>
+	</form>
+	<div ng-show="logged" class="logout">
+		<span>{{ user.firstName }} {{ user.lastName }}</span>
+		<button class="btn btn-default navbar-btn" ng-click="logout()">Déconnexion</button>
+	</div>
+	<div class="menu">
+		<nav ng-show="!logged">
+			<ul>
+				<li><a ui-sref="home"><h8>Accueil</h8></a></li>
+				<li><a ui-sref="newNotice"><h8>Je propose mes services</h8></a></li>
+				<li><a ui-sref="contact"><h8>Contact</h8></a></li>
+			</ul>
+		</nav>
+		<nav ng-show="logged">
+			<ul>
+				<li><a ui-sref="home"><h8>Accueil</h8></a></li>
+				<li><a ui-sref="newNotice"><h8>Nouvelle annonce</h8></a></li>
+				<li><a ui-sref="notice"><h8>Mes annonces</h8></a></li>
+				<li><a ui-sref="contact"><h8>Contact</h8></a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
+<div ui-view></div>
+<footer>
+	<div id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="contactinfo col-sm-3 main-el">
+					<div class="divider divider-5">
+						<h5>Contact Info</h5>
+					</div>
+					<div class="contact-widget">
+						<div class="line">
+							<i class="address"></i> <div class="text">27 avenue de Fontarrabie 75020 Paris</div>
+						</div>
+						<div class="line">
+							<i class="phone"></i>
+							<div class="text">01.64.49.72.11</div>
+						</div>
+						<div class="line">
+							<i class="mail"></i>
+							<div class="text">contact @ CommealaMaison.com</div>
+						</div>
+						<div class="line">
+							<i class="site"></i>
+							<div class="text"><a href="" target="_blank">www.CommealaMaison.com</a></div>
+						</div>
+					</div>
+				</div><div class=" col-sm-3 main-el">
+				<div class="textwidget"><div class="divider divider-5"><h5>Services</h5><div class="separator"></div></div>
+					<i class="bas"></i><a href="" title="Partenaires">Partenaires</a>
+					<br/><i class="bas"></i><a href="" title="espaces publicitaires localisés">Espaces publicitaires</a><br/><i class="bas"></i>
+					<a href="">Comment ça marche ?</a><br/>
+				</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id="botbar">
+			<div class="container">
+				<p class="copyright-text">
+					&#169; Copyright 2016 - <a href="/mentions-legales">Mentions légales</a> - <a href="/conditions-generales-dutilisation">Conditions générales
+					d'utilisation</a>
+				</p>     
+			</div>
+		</div>
+	</div>
+</footer>

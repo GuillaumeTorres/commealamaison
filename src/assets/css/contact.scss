@@ -1,6 +1,6 @@
 .contact-page{
 	h1{
-		font-family: cursive;
+		font-family:"Comic Sans MS", cursive, sans-serif;
 		text-align: center;
 		font-size: 4em;
 		color: green;
@@ -17,9 +17,15 @@
 	color: #ffffff;      
 	font-weight: normal;    
 	}
-	h3{
-		font-family: cursive;
+	h2{
+		font-family:"Comic Sans MS", cursive, sans-serif;
 		color: green;
+	}
+	.formulaire{
+		border: 1px solid dimgrey;
+		background-color: lightgray;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 	
 }

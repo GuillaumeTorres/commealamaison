@@ -8,12 +8,12 @@ var User = mongoose.model('User', {
 	lastName: String,
 	email: String,
 	password: String,
+	salt: String,
 	address: {
-		rue: String,
+		street: String,
 		city: String,
 		postal_code: String
 	},
-	phone_number: String,
 	coordinate: {
 		long: Number,
 		lat: Number

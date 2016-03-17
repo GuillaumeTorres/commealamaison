@@ -1,10 +1,15 @@
-var mongoose = require('mongoose');
-// var User = require('../db/db').Notice;
-var express = require('express');
-var router = express.Router();
+var mongoose = require('mongoose')
+// var Notice = require('../db/db').Notice
+var express = require('express')
+var router = express.Router()
 
 // Retourne les annonces autour de chez soi, filtré par type
-router.get('/:type', (req, res) => {
+router.post('/search', (req, res) => {
+	console.log(req.body)
+	console.log(req.user)
+	// Notice.find({ _id:  })
+	// 	.then(user => res.send(user))
+	// 	.catch(err => res.send(err))
 	res.send([
 		{
 			author: {
@@ -49,7 +54,7 @@ router.get('/:type', (req, res) => {
 			created: 1457910000
 		}
 	])
-});
+})
 
 // Retourne une annocne
 router.get('/:id', (req, res) => {
@@ -76,14 +81,27 @@ router.get('/:id', (req, res) => {
 			created: 1457910000
 		}
 	)
-});
+})
+
+router.get('/user/:id_user', (req, res) => {
+	var id = req.params.id_user
+	Notice.find({ author: mongoose.Types.ObjectId(id) })
+		.then(notices => res.send(notices))
+		.catch(err => res.send(err))
+})
 
 // Enregistre une nouvelle annonce
 router.post('/', (req, res) => {
-
-});
+	console.log(req.body)
+	const notice = new Notice(req.body)
+	notice.save()
+		.then(notice => res.send(notice))
+		.catch(error => res.sendStatus(500))
+})
 
 // Modifie une annonce
 router.put('/:id', (req, res) => {
 	
-});
+})
+
+module.exports = router;

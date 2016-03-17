@@ -1,3 +1,30 @@
 .register-page{
+	h2{
+		font-family:"Comic Sans MS", cursive, sans-serif;
+		text-align: center;
+		font-size: 4em;
+		color: green;
+	}
+	#inscription{
+	width: 200px;
+	height: 34px;
+	font-size: 1.5em;
+	background-color: orange;
+	border-color: orange; 
+	border-style: solid;  
+	border-width: 1px;   
+	color: #ffffff;      
+	font-weight: normal;
+	}
+	#subscrib{
+		background-color: lightgray;
+	}
+
+	p{
+		text-align: center;
+		padding: 5px 0;
+		font-weight: bold;
+		margin-top: 15px;
+	}
 	
 }
