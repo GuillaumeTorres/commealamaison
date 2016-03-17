@@ -66,6 +66,9 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 			url: '/listoffers',
 			template: require('views/notice/listoffers.html'),
 			controller: noticeController,
+			params: {
+		        params: null
+		    },
 			parent: 'main'
 		})
 		.state('newNotice', {
@@ -96,11 +99,10 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 	$locationProvider.html5Mode(true);
 });
 
-app.run( ($rootScope) => {
-    $rootScope.truc = 'coucou je suis le test !';
-    $rootScope.testf = () => {
-    	console.log('HEY');
-    }
+app.run(function($http, $localStorage) {
+	if($localStorage.user){
+		$http.defaults.headers.common.Authorization = 'Bearer '+$localStorage.user.token;
+	}
 });
 
 export default app;

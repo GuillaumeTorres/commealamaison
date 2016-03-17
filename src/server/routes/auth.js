@@ -11,9 +11,7 @@ var httpAdapter = 'http'
 
 var geocoder = nodeGeo(geocoderProvider)
 
-const key = 'calm'
-
-const createToken = userData => jwt.sign(userData, key)
+const createToken = userData => jwt.sign(userData, process.env.JWT_SECRET)
 
 const filterUserData = user => ({
 	_id: user._id,
@@ -36,7 +34,7 @@ router.post('/login', (req, res) => {
 		.then(filterUserData)
 		.then(addToken)
 		.then( user => res.send(user) )
-		.catch( error => res.sendStatus(500) )
+		.catch( error => console.error(error) )
 })
 
 router.post('/signin', (req, res) => {

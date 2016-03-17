@@ -9,22 +9,21 @@
 		<div class="container-fluid">
 		<div class="row">
 			<div class="col-xs-12" id="bordure">
-				<select name="Activité" class="styled-select">
+				<form ng-submit="search(search)">
+				<select name="Activité" class="styled-select" ng-model="search.type">
 					<option value="value0" selected disabled>Activité</option> 
-					<option value="value1">Plomberie</option> 
-					<option value="value2">Peinture</option>
-					<option value="value3">Prêt de matériel</option>
-					<option value="value4">Jardinage</option>
-					<option value="value5">Électricité</option>
+					<option value="Plomberie">Plomberie</option> 
+					<option value="Peinture">Peinture</option>
+					<option value="Jardinage">Jardinage</option>
+					<option value="Électricité">Électricité</option>
 				</select>
-				<select name="Rayon" class="styled-select">
+				<select name="Rayon" class="styled-select" ng-model="search.range">
 					<option value="value0" selected disabled>Rayon</option> 
-					<option value="value1">1Km</option> 
-					<option value="value2">5Km</option>
-					<option value="value3">10Km</option>
-					<option value="value4">30Km</option>
+					<option value="1">1Km</option> 
+					<option value="5">5Km</option>
+					<option value="10">10Km</option>
+					<option value="30">30Km</option>
 				</select>
-				<form action="listoffers" method="get">
 					<input id="search-btn" type="submit" value="Rechercher"/>
 				</form>
 			</div>
@@ -49,22 +48,4 @@
 		</div>
 	</div>
 	<br>
-	</div>
-	 <!-- Exemple form angular  -->
-<!-- <button ng-click="showTest = !showTest">Click to show</button>
-<div ng-show="showTest">
-<form ng-submit="testFunction()">
-<input type="text" ng-model="action" placeholder="Tape une action">
-<input type="submit">
-</form>
-
-<div ng-repeat="user in users">
-<ul>
-<li>{{ user.firstName }}</li>
-<li>{{ user.lastName }}</li>
-<li>{{ user.email }}</li>
-<li>{{ user.phone_number }}</li>
-<li>{{ user.address.postal_code }}</li>
-</ul>
 </div>
-</div> -->

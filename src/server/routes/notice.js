@@ -1,10 +1,15 @@
 var mongoose = require('mongoose')
-var Notice = require('../db/db').Notice
+// var Notice = require('../db/db').Notice
 var express = require('express')
 var router = express.Router()
 
 // Retourne les annonces autour de chez soi, filtré par type
-router.get('/:type', (req, res) => {
+router.post('/search', (req, res) => {
+	console.log(req.body)
+	console.log(req.user)
+	// Notice.find({ _id:  })
+	// 	.then(user => res.send(user))
+	// 	.catch(err => res.send(err))
 	res.send([
 		{
 			author: {
