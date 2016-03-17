@@ -1,3 +1,57 @@
 .settings-page{
-	
+	h1{
+		font-family:'Montserrat', sans-serif;
+		text-align: center;
+		font-size: 4em;
+		color: green;
+		margin-top: 0;
+	}
+	h3{
+		font-family:'Montserrat', sans-serif;
+		font-size: 1.9em;
+		color: green;
+		margin-left: 1.5%;
+		width: 350px;
+	}
+	#subscrib{
+		background-color: lightgray;
+	}
+	tr{
+		float: right;
+	}
+	#ts{
+		border: 5px solid black;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+	#jardinage2{
+		height: 300px;
+		width: 300px;
+		background: url('../img/jardinage.jpg')no-repeat;
+		background-size:contain;
+		text-align: center;
+	}
+	.actions{
+		float: right;
+		margin-right: 10%;
+	}
+	.bouton{
+		width: 80px;
+		height: 30px;
+		background-color: orange;
+		border-color: orange; 
+		border-style: solid;  
+		border-width: 1px;   
+		color: #ffffff;      
+		margin-left: 4%;
+		margin-top: 5px;
+	}
+	input#pwd{
+		width: 22em;
+		margin-left: 4%;
+	}
+	input#cpwd{
+		width: 22em;
+		margin-left: 4%;
+	}
 }
