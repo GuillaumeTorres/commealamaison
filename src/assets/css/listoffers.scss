@@ -16,31 +16,31 @@
 		border: 1px solid black; 
 		font-size: 1.5em;
 	}
-	#plomberie{
+	.plomberie{
 		height: 200px;
 		width: 200px;
 		background: url('../img/plomberie.jpg')no-repeat;
 		background-size:cover;
 	}
-	#peinture{
+	.Peinture{
 		height: 200px;
 		width: 200px;
 		background: url('../img/peinture.jpg')no-repeat;
 		background-size:cover;
 	}
-	#outils{
+	.Outils{
 		height: 200px;
 		width: 200px;
 		background: url('../img/outils.jpg')no-repeat;
 		background-size:cover;
 	}
-	#jardinage{
+	.Jardinage{
 		height: 200px;
 		width: 200px;
 		background: url('../img/jardinage.jpg')no-repeat;
 		background-size:cover;
 	}
-	#elect{
+	.Electricite{
 		height: 200px;
 		width: 200px;
 		background: url('../img/electrique.jpg')no-repeat;
@@ -52,7 +52,6 @@
 	#machin{
 		font-size: 1.5em;
 		background-color: lightgray;
-
 	}
 	#empiler{
 		text-align: center;
