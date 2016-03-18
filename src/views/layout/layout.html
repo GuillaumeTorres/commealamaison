@@ -16,7 +16,7 @@
 		</div>
 	</form>
 	<div ng-show="logged" class="logout">
-		<span>{{ user.firstName }} {{ user.lastName }}</span>
+		<a ui-sref="settings"><span>{{ user.firstName }} {{ user.lastName }}</span></a>
 		<button class="btn btn-default navbar-btn" ng-click="logout()">Déconnexion</button>
 	</div>
 	<div class="menu">

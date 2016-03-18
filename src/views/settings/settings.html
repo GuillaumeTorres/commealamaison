@@ -7,11 +7,13 @@
 				<h1>Profil</h1>
 				<br>
 				<div class="infos">
-					<h3>Nom : Jean Dumont</h3>
-					<h3>Email : JeanDumont@gmail.com</h3>
-					<h3>Adresse : 27 Avenue de Fontarrabie</h3>
-					<h3>Ville : Paris 75000</h3>
+					<h3>Nom : {{ user.lastName }}</h3>
+					<h3>Prénom : {{ user.firstName }}</h3>
+					<h3>Email : {{ user.email }}</h3>
+					<h3>Adresse :{{ user.adress.street }}</h3>
+					<h3>Ville : {{ user.adress.city }}</h3>
 					<h3>Date de naissance : 17/03/2016</h3>
+					<h3><a ui-sref="home">Modifier</a></h3>
 				</div>
 				<br>
 				<br>

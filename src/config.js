@@ -9,6 +9,7 @@ import mapsController from 'views/maps/maps';
 import noticeController from 'views/notice/notice';
 import registerController from 'views/register/register';
 import settingsController from 'views/settings/settings';
+import settingsChangeController from 'views/settingsChange/settingsChange';
 import contactController from 'views/contact/contact';
 
 const app = angular.module('app', [uiRouter, 'ngStorage']);
@@ -56,6 +57,12 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 			controller: settingsController,
 			parent: 'main'
 		})
+		.state('settingsChange', {
+			url: '/settingsChange',
+			template: require('views/settingsChange/settingsChange.html'),
+			controller: settingsChangeController,
+			parent: 'main'
+		})
 		.state('notice', {
 			url: '/notice/list',
 			template: require('views/notice/list.html'),
@@ -92,6 +99,12 @@ app.config(($stateProvider, $urlRouterProvider, $locationProvider) => {
 		.state('contact', {
 			url: '/contact',
 			template: require('views/contact/contact.html'),
+			controller: contactController,
+			parent: 'main'
+		})
+		.state('chat', {
+			url: '/chat',
+			template: require('views/chat/chat.html'),
 			controller: contactController,
 			parent: 'main'
 		})

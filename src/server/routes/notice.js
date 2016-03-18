@@ -1,5 +1,5 @@
 var mongoose = require('mongoose')
-// var Notice = require('../db/db').Notice
+var Notice = require('../db/db').Notice
 var express = require('express')
 var router = express.Router()
 
