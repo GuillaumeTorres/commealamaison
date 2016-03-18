@@ -1,5 +1,5 @@
 var mongoose = require('mongoose')
-// var User = require('../db/db').User
+var User = require('../db/db').User
 var express = require('express')
 var router = express.Router()
 var bcrypt = require('bcryptjs')

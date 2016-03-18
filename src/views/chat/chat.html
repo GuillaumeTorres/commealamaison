@@ -1,0 +1,48 @@
+<div class="settings-page">
+	<div class="container-fluid" id="bd">
+		<div class="row">
+			<div class="col-xs-2" id="jardinage2">                                
+			</div>
+			<div class="col-sm-4 col col-md-offset-1 " id="subscrib">
+				<h1>Profil</h1>
+				<br>
+				<div class="infos">
+					<h3>Nom : {{ user.lastName }}</h3>
+					<h3>Prénom : {{ user.firstName }}</h3>
+					<h3>Email : {{ user.email }}</h3>
+					<h3>Adresse :{{ user.adress.street }}</h3>
+					<h3>Ville : {{ user.adress.city }}</h3>
+					<h3>Date de naissance : 17/03/2016</h3>
+					<h3><a ui-sref="home">Modifier</a></h3>
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+			</div>
+			<div class="actions">
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<h3>Changer de Mot de Passe : </h3>
+				<br> 
+				<label  for= "pwd" >Nouveau mot de passe <span class="required"></span></label> 
+				<input required type= "password"  class= "form-control"  id= "pwd"  ng-model="user.password" > 
+				<label  for= "cpwd" >Confirmer le mot de passe <span class="required"></span></label> 
+				<input required type= "password"  class= "form-control"  id= "cpwd" ng-model="passwordConfirm" > 
+				<button type="button" class="bouton">Valider</button>
+			</div>
+
+
+		</div>
+	</div>
+</div>
