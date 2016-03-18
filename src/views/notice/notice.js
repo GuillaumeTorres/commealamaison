@@ -3,6 +3,7 @@ import angular from 'angular';
 export default function($scope, $localStorage, $http, $state, $stateParams){
 	$scope.logged = $localStorage.user ? true : false;
 	$scope.newNotice = data => {
+		console.log('omg');
 		data.author = $localStorage.user._id;
 		data.created = new Date();
 		data.city = $localStorage.user.address.city;
