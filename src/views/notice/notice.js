@@ -24,7 +24,7 @@ export default function($scope, $localStorage, $http, $state, $stateParams){
 	}
 
 	if($state.current.name == 'listoffers'){
-		if($localStorage.user){
+		if(!$localStorage.user){
 			$state.go('home');
 		}
 		console.log('params: ',$stateParams);

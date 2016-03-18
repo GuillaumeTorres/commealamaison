@@ -2,7 +2,7 @@
 	<h1>Liste des Annonces trouvées</h1>
 	<br>
 	<div class="container">
-		<table class="col-md-10 col-md-offset-1" id="empiler">
+		<table class="col-md-10 col-md-offset-1" id="empiler" ng-repeat="notice in notices">
 			<tr id="machin">
 				<td>Activité</td>
 				<td>Annonce</td>
@@ -10,81 +10,8 @@
 				<td>Contact</td>
 			</tr>
 			<tr>
-				<td id="plomberie" ></td>
-				<td>Titre<br><br>Description de l'annonce <br><br><br><br><h6>Date de l'offre</h6></td>
-				<td>Nom<br><br>Adresse Mail<br><br>Localisation</td>
-				<td><br><br>Contacter
-				<button type="button" class="btn btn-default" aria-label="Left Align" ui-sref="showNotice">
-						<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-					</button>
-					<br><br></td>
-			</tr>
-		</table>
-		<table class="col-md-10 col-md-offset-1" id="empiler">
-			<tr id="machin">
-				<td>Activité</td>
-				<td>Annonce</td>
-				<td>Client</td>
-				<td>Contact</td>
-			</tr>
-			<tr>
-				<td id="peinture"></td>
-				<td>Titre<br><br>Description de l'annonce <br><br><br><br><h6>Date de l'offre</h6></td>
-				<td>Nom<br><br>Adresse Mail<br><br>Localisation</td>
-				<td><br><br>Contacter
-				<button type="button" class="btn btn-default" aria-label="Left Align" ui-sref="showNotice">
-						<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-					</button>
-					<br><br></td>
-			</tr>
-		</table>
-		<table class="col-md-10 col-md-offset-3" id="empiler">
-			<tr id="machin">
-				<td>Activité</td>
-				<td>Annonce</td>
-				<td>Client</td>
-				<td>Contact</td>
-			</tr>
-			<tr>
-				<td id="outils"></td>
-				<td>Titre<br><br>Description de l'annonce <br><br><br><br><h6>Date de l'offre</h6></td>
-				<td>Nom<br><br>Adresse Mail<br><br>Localisation</td>
-				<td><br><br>Contacter
-					<button type="button" class="btn btn-default" aria-label="Left Align" ui-sref="showNotice">
-						<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-					</button>
-					<br><br></td>
-
-			</tr>
-		</table>
-		<table class="col-md-10 .col-md-offset-3" id="empiler">
-			<tr id="machin">
-				<td>Activité</td>
-				<td>Annonce</td>
-				<td>Client</td>
-				<td>Contact</td>
-			</tr>
-			<tr>
-				<td id="jardinage"></td>
-				<td>Titre<br><br>Description de l'annonce <br><br><br><br><h6>Date de l'offre</h6></td>
-				<td>Nom<br><br>Adresse Mail<br><br>Localisation</td>
-				<td><br><br>Contacter
-				<button type="button" class="btn btn-default" aria-label="Left Align" ui-sref="showNotice">
-						<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
-					</button>
-					<br><br></td>
-			</tr>
-		</table>
-		<table class="col-md-10 .col-md-offset-3" id="empiler">
-			<tr id="machin">
-				<td>Activité</td>
-				<td>Annonce</td>
-				<td>Client</td>
-				<td>Contact</td>
-			</tr>
-			<tr>
-				<td id="elect"></td>
-				<td>Titre<br><br>Description de l'annonce <br><br><br><br><h6>Date de l'offre</h6></td>
+				<td ng-class="notice.type" ></td>
+				<td>{{notice.title}}<br><br>{{notice.description}} <br><br><br><br><h6>{{notice.created | date:'dd-MM-yyyy'}}</h6></td>
 				<td>Nom<br><br>Adresse Mail<br><br>Localisation</td>
 				<td><br><br>Contacter
 				<button type="button" class="btn btn-default" aria-label="Left Align" ui-sref="showNotice">

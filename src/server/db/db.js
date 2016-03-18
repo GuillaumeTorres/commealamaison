@@ -25,6 +25,7 @@ var Notice = mongoose.model('Notice', {
 	title: String,
 	description: String,
 	type: String,
+	city: String,
 	created: Date
 });
 
